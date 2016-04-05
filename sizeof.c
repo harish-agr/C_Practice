@@ -9,7 +9,11 @@
 *
 ******************************************************************************/
 /*when an element is passed */
+#define size_of(x) ((size_t)(&x+1) -(size_t)(&x))
+/*
+or 
 #define size_of(x) ((char*)(&x+1) -(char*)(&x))
+*/
 
 /*when a data type is passed*/
 #define sizeof(x) ((size_t)&((x*)0)[1])
