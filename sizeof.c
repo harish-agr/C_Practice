@@ -1,6 +1,8 @@
 /*
 * Author: Jagadeesh Pagadala
 * Description: size of an variable without using sizeof operator
+* NOTE: sizeof is an operator,,,, not a macro or not a function. It is
+* implemented in gcc. And sizeof is run time.
 *
 */
 #include <stdio.h>
