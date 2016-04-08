@@ -42,9 +42,15 @@ char *str_rev(char* str)
 
 	len = strlen(str);
 	for (i=0; i<len/2; i++) {
-		tmp = str[i];
+		/*tmp = str[i];
 		str[i] = str[len-i-1];
 		str[len-i-1] = tmp;
+		*/
+		/***********With out using tmp variable************/
+		str[i] = str[i] ^ str[len-i-1]; 
+		str[len-i-1] = str[i] ^ str[len-i-1];
+		str[i] = str[i] ^ str[len-i-1];
+		
 	}
 	printf("\n len: %d\n",len);
 	return str;
@@ -67,9 +73,9 @@ int main()
 	/* Below string can't be processed as string is stored in code segment*/
 	/*printf("\n reverse of (%s) is %s \n", string, str_rev(string));*/ 
 	printf("\n reverse of (%s) is ", string1);
-	printf(" : %s \n", str_rev(string1));
+	printf(":%s \n", str_rev(string1));
 	printf("\n reverse of (%s) is ", malloc_string);
-	printf(" : %s \n", str_rev(malloc_string));
+	printf(":%s \n", str_rev(malloc_string));
 
 	free_mem(malloc_string);	
 	return 0;
