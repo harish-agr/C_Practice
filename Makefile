@@ -10,7 +10,7 @@
 #clean:
 #	rm lsb8
 
-ALL=cmp_enum_int  endian_ness  htonl  lsb8  offsetof  oom_killer_test  sizeof
+ALL=cmp_enum_int  endian_ness  htonl  lsb8  offsetof  oom_killer_test  sizeof strlen
 
 all: $(ALL)
 
