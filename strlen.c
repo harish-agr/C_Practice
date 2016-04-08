@@ -6,8 +6,9 @@
 ******************************************************************************/
 
 #include <stdio.h>
+#include "strlen.h"
 
-int str_len(char *str )
+int str_len(char *str)
 {
 	int len=0;
 
