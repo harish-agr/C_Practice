@@ -1,5 +1,5 @@
 /*****************************************************************************
-*	Description	:	
+*	Description	:	usage of typeof	
 *	Author		:	Jagadeesh Pagadala
 *	Date		:	15-04-2016
 *
