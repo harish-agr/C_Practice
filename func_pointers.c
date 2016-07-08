@@ -1,7 +1,7 @@
 /*****************************************************************************
-*	Description	:	
+*	Description	:	Usage of function pointers
 *	Author		:	Jagadeesh Pagadala
-*	Date		:	Usage of function pointers
+*	Date		:	08-07-2016
 *
 *****************************************************************************/
 
